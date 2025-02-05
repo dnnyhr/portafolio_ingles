@@ -232,7 +232,7 @@ filterButtons.forEach(button => {
         
         document.querySelectorAll('.project-card').forEach(project => {
             const category = project.dataset.category;
-            if (filter === 'Todos' || category === filter) {
+            if (filter === 'All' || category === filter) {
                 project.classList.remove('hidden');
                 project.style.opacity = '1';
                 project.style.transform = 'scale(1)';
